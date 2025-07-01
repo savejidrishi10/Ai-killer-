@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Only 1 AI - Chatbot</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; background: #f4f4f4; }
+    textarea { width: 90%; padding: 10px; font-size: 16px; }
+    button { margin: 5px; padding: 10px 15px; font-size: 16px; cursor: pointer; }
+    #output { margin-top: 20px; white-space: pre-wrap; background: #fff; padding: 10px; border-radius: 6px; width: 90%; margin-left: auto; margin-right: auto; }
+  </style>
+</head>
+<body>
+  <h1>🤖 Only 1 AI - Multi API Chatbot</h1>
+  <div>
+    <button onclick="switchAPI('openai')">🔵 ChatGPT</button>
+    <button onclick="switchAPI('gemini')">🔴 Gemini</button>
+    <button onclick="switchAPI('deepseek')">🟡 DeepSeek</button>
+  </div>
+  <p>Current API: <strong id="currentApiName">openai</strong></p>
+  <textarea id="chat" rows="5" placeholder="Type your message here..."></textarea><br/>
+  <button onclick="sendMessage()">Send</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
